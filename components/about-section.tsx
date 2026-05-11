@@ -1,6 +1,3 @@
-import { Badge } from "@/components/ui/badge";
-import { Card } from "@/components/ui/card";
-
 export function AboutSection() {
   const qualities = [
     "Detail-Oriented",
@@ -10,38 +7,44 @@ export function AboutSection() {
   ];
 
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-foreground tracking-tight">
-          About Me
-        </h2>
+    <section id="about" className="py-24 px-4 sm:px-6 lg:px-8 bg-secondary/30">
+      <div className="max-w-5xl mx-auto">
+        <div className="flex items-center gap-4 mb-14">
+          <span className="font-mono text-xs text-primary tracking-[0.25em] uppercase shrink-0">
+            About
+          </span>
+          <div className="flex-1 h-px bg-border" />
+        </div>
 
-        <Card className="p-8 mb-8 shadow-lg border-border/50 bg-card/80 backdrop-blur-sm">
-          <div className="space-y-5 mb-8">
-            <p className="text-lg text-muted-foreground leading-relaxed text-pretty font-medium text-justify">
-              With <strong>12+ years in QA leadership</strong>, I help organisations ship faster and with greater confidence.
-              I specialise in <strong>Salesforce</strong> and <strong>Oracle Cloud ERP</strong> testing, bringing
-              risk-based strategies and technical depth to complex transformations across banking, government,
-              aviation, and logistics.
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_200px] gap-12 items-start">
+          <div className="space-y-5">
+            <p className="text-foreground text-lg leading-relaxed">
+              With <span className="text-primary font-semibold">12+ years in QA leadership</span>, I help organisations ship
+              faster and with greater confidence. I specialise in{" "}
+              <span className="text-primary font-semibold">Salesforce</span> and{" "}
+              <span className="text-primary font-semibold">Oracle Cloud ERP</span> testing, bringing
+              risk-based strategies and technical depth to complex transformations across banking,
+              government, aviation, and logistics.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed text-pretty text-justify">
-              I translate business requirements into clear test strategies, lead UAT with stakeholders, and ensure
-              every release builds trust. Currently, I’m exploring how <strong>AI</strong> can augment quality
-              engineering — from automated test generation to predictive defect analysis.
+            <p className="text-muted-foreground text-base leading-relaxed">
+              I translate business requirements into clear test strategies, lead UAT with stakeholders,
+              and ensure every release builds trust. Currently exploring how{" "}
+              <span className="text-foreground font-medium">AI</span> can augment quality engineering —
+              from automated test generation to predictive defect analysis.
             </p>
           </div>
-          <div className="flex flex-wrap gap-3 justify-center">
+
+          <div className="flex flex-col gap-2">
             {qualities.map((quality) => (
-              <Badge
+              <div
                 key={quality}
-                variant="secondary"
-                className="px-4 py-2 text-sm font-semibold bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-colors duration-200"
+                className="font-mono text-[11px] tracking-wide text-muted-foreground border border-border/50 px-3 py-2 rounded-sm hover:border-primary/30 hover:text-primary transition-colors duration-200"
               >
                 {quality}
-              </Badge>
+              </div>
             ))}
           </div>
-        </Card>
+        </div>
       </div>
     </section>
   );
