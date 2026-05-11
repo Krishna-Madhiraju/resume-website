@@ -28,3 +28,9 @@ next-env.d.ts
 
 dist/
 .DS_Store
+
+# Playwright MCP temp files
+.playwright-mcp/
+
+# Review screenshots
+review-*.png

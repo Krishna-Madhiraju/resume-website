@@ -1,61 +1,72 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Calendar } from "lucide-react";
-import { BuildingIcon } from "lucide-react";
+import {
+  Calendar,
+  BuildingIcon,
+  Target,
+  Cloud,
+  Building2,
+  Users,
+  ShieldCheck,
+  Database,
+  GitBranch,
+  Zap,
+  Sparkles,
+} from "lucide-react";
 
 const competencies = [
   {
     title: "Test Strategy & Execution",
     description:
       "Designing and executing functional, regression, system, performance, and API testing strategies aligned to business needs.",
-    emoji: "🎯",
+    icon: Target,
   },
   {
     title: "Salesforce Testing Expertise",
     description:
       "Omni-Channel, Email-to-Case, Web-to-Case, workflows, dashboards — ensuring seamless customer experiences.",
-    emoji: "☁️",
+    icon: Cloud,
   },
   {
     title: "Oracle Cloud ERP Testing",
     description:
       "Validating Procure-to-Pay, Contracts, and complex ERP integrations. Ensuring stable financial and operational workflows.",
-    emoji: "🏢",
+    icon: Building2,
   },
   {
     title: "UAT & Stakeholder Engagement",
     description:
       "Leading UAT, collaborating with SMEs, and aligning testing with business objectives.",
-    emoji: "🤝",
+    icon: Users,
   },
   {
     title: "Defect Management & Risk Mitigation",
     description:
       "Tracking, managing, and resolving defects to ensure smooth, compliant, high-quality releases.",
-    emoji: "🛡️",
+    icon: ShieldCheck,
   },
   {
     title: "Backend & Data Validation",
     description:
       "SQL-based backend validation, test data management, and troubleshooting data integrity issues.",
-    emoji: "🗄️",
+    icon: Database,
   },
   {
     title: "Agile & Test Leadership",
     description:
       "Optimising test execution, leading small QA teams, and driving continuous improvement with JIRA, XRAY, Azure DevOps.",
-    emoji: "🚀",
+    icon: GitBranch,
   },
   {
     title: "API Testing",
     description:
       "Postman and Rest Assured expertise — validating integrations, ensuring seamless data exchange, and strengthening system reliability.",
-    emoji: "⚡️",
+    icon: Zap,
   },
   {
     title: "AI Exploration",
     description:
-      "nthusiastically exploring AI’s role in testing and quality engineering — experimenting with AI-driven test generation, defect prediction, and productivity tools.",
-    emoji: "🤖",
+      "Enthusiastically exploring AI's role in testing and quality engineering — experimenting with AI-driven test generation, defect prediction, and productivity tools.",
+    icon: Sparkles,
   },
 ];
 
@@ -65,15 +76,15 @@ const experiences = [
     company: "TTC Australia",
     period: "July 2025 – Current",
     description:
-      "Leading enterprise consulting initiatives and strategic QA implementations for large-scale digital transformation projects.",
+      "Leading enterprise QA consulting for digital transformation programmes, shaping test strategy and governance for large-scale implementations.",
     color: "bg-blue-500",
   },
   {
-    title: "Quality Engineer - Salesforce",
+    title: "Quality Engineer – Salesforce",
     company: "NZ Post",
     period: "May 2023 – July 2025",
     description:
-      "Specialized in Salesforce Service Cloud testing, API automation, and quality assurance for critical postal service operations.",
+      "Owned Salesforce Service Cloud testing end-to-end — from test strategy through Playwright automation and Postman API validation — for mission-critical postal operations.",
     color: "bg-teal-500",
   },
   {
@@ -81,7 +92,7 @@ const experiences = [
     company: "Accident Compensation Corporation (ACC)",
     period: "April 2021 – May 2023",
     description:
-      "Led comprehensive testing strategies for enterprise applications, focusing on risk assessment and defect management.",
+      "QA lead for Oracle Cloud ERP integration programmes. Shaped risk-based test strategies and managed end-to-end defect lifecycle for complex government insurance systems.",
     color: "bg-cyan-500",
   },
   {
@@ -89,7 +100,7 @@ const experiences = [
     company: "Jarden",
     period: "Feb 2021 – April 2021",
     description:
-      "Delivered high-quality testing solutions for financial services applications with focus on regulatory compliance.",
+      "Delivered testing across financial services applications with a focus on regulatory compliance and data integrity.",
     color: "bg-emerald-500",
   },
   {
@@ -97,7 +108,7 @@ const experiences = [
     company: "Waka Kotahi (NZTA)",
     period: "July 2020 – Jan 2021",
     description:
-      "Managed testing initiatives for transport infrastructure systems, ensuring reliability and performance standards.",
+      "Led testing for national transport infrastructure systems, ensuring reliability and performance of citizen-facing services.",
     color: "bg-green-500",
   },
   {
@@ -105,7 +116,7 @@ const experiences = [
     company: "Auckland Airport",
     period: "Aug 2019 – March 2020",
     description:
-      "Executed comprehensive testing for airport operations systems, focusing on passenger experience and operational efficiency.",
+      "Validated airport operations systems supporting passenger experience and airside/landside operational workflows.",
     color: "bg-amber-500",
   },
   {
@@ -113,7 +124,7 @@ const experiences = [
     company: "Ministry for Primary Industries (MPI)",
     period: "April 2019 – July 2019",
     description:
-      "Delivered testing solutions for government regulatory systems, ensuring compliance and data integrity.",
+      "Delivered testing for government regulatory and biosecurity systems, ensuring compliance and data integrity.",
     color: "bg-orange-500",
   },
   {
@@ -121,7 +132,7 @@ const experiences = [
     company: "Accident Compensation Corporation (ACC)",
     period: "March 2018 – April 2019",
     description:
-      "Performed systematic testing and quality assurance for healthcare and compensation management systems.",
+      "Executed systematic testing for healthcare and compensation management systems within ACC's enterprise portfolio.",
     color: "bg-red-500",
   },
   {
@@ -129,23 +140,23 @@ const experiences = [
     company: "Vodafone New Zealand",
     period: "Sep 2017 – Dec 2017",
     description:
-      "Managed system configurations and testing for telecommunications infrastructure and customer service platforms.",
+      "Managed system configuration and testing across telco infrastructure and customer service platforms.",
     color: "bg-purple-500",
   },
   {
-    title: "Senior Test Analyst - Salesforce",
+    title: "Senior Test Analyst – Salesforce",
     company: "Prolific Corporation Ltd",
     period: "May 2014 – June 2016",
     description:
-      "Specialized in Salesforce platform testing and quality assurance, delivering robust solutions for enterprise CRM implementations.",
+      "Built test frameworks and delivered high-quality Salesforce platform testing for enterprise CRM implementations.",
     color: "bg-pink-500",
   },
   {
-    title: "Application Developer - Salesforce",
+    title: "Application Developer – Salesforce",
     company: "IBM India",
     period: "Aug 2013 – May 2014",
     description:
-      "Developed and tested Salesforce applications, focusing on custom development and integration solutions for enterprise clients.",
+      "Developed and tested Salesforce applications for enterprise clients, focusing on custom development and system integration.",
     color: "bg-indigo-500",
   },
   {
@@ -153,7 +164,7 @@ const experiences = [
     company: "Infosys",
     period: "Dec 2010 – Aug 2013",
     description:
-      "Engineered and maintained enterprise systems, providing technical solutions and quality assurance for large-scale software projects.",
+      "Engineered and maintained enterprise systems across multiple client accounts, providing QA and technical solutions at scale.",
     color: "bg-slate-500",
   },
 ];
@@ -161,90 +172,88 @@ const experiences = [
 export function SkillsExperienceSection() {
   return (
     <>
-      {/* What I Bring Section */}
-      <section id="whatibring" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto">
+      {/* Experience Timeline Section */}
+      <section id="experiencetimeline" className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center text-foreground tracking-tight">
-            💡 What I Bring
+            Experience Timeline
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-            {competencies.map((competency) => (
-              <Card
-                key={competency.title}
-                className="h-full hover:shadow-xl hover:border-primary/50 transition-all duration-300 bg-card/80 backdrop-blur-sm border-border/50 group hover:scale-105"
-              >
-                <CardContent className="p-6">
-                  <div className="flex items-start gap-4">
-                    <div className="text-3xl flex-shrink-0 group-hover:scale-110 transition-transform duration-200">
-                      {competency.emoji}
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="font-bold text-lg mb-3 text-foreground group-hover:text-primary transition-colors duration-200 tracking-tight">
-                        {competency.title}
-                      </h3>
-                      <p className="text-muted-foreground text-sm leading-relaxed font-medium">
-                        {competency.description}
+          <div className="relative">
+            <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/60 to-primary/30"></div>
+
+            <div className="space-y-6">
+              {experiences.map((exp, index) => (
+                <div key={index} className="relative flex items-start">
+                  <div
+                    className={`absolute left-4 w-4 h-4 ${exp.color} rounded-full border-4 border-background z-10 shadow-lg`}
+                  ></div>
+
+                  <div className="ml-14 flex-1">
+                    <div className="bg-card/80 backdrop-blur-sm border border-border/50 rounded-lg p-4 hover:shadow-lg transition-all duration-300 hover:border-primary/30">
+                      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-2 gap-1">
+                        <div className="flex-1">
+                          <h3 className="font-bold text-foreground text-base leading-tight tracking-tight">
+                            {exp.title}
+                          </h3>
+                          <div className="flex items-center gap-2 mt-1">
+                            <BuildingIcon className="h-3.5 w-3.5 text-muted-foreground" />
+                            <span className="text-muted-foreground font-semibold text-sm">
+                              {exp.company}
+                            </span>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-1 text-primary text-xs font-semibold shrink-0">
+                          <Calendar className="h-3.5 w-3.5" />
+                          <span>{exp.period}</span>
+                        </div>
+                      </div>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        {exp.description}
                       </p>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
-            ))}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Experience Timeline Section */}
-      <section id="experiencetimeline" className="py-20 px-4 sm:px-6 lg:px-8">
+      {/* What I Bring Section */}
+      <section id="whatibring" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center text-foreground tracking-tight">
-            Experience Timeline
+          <h2 className="text-3xl sm:text-4xl font-bold mb-3 text-center text-foreground tracking-tight">
+            What I Bring
           </h2>
-          <div className="max-w-3xl mx-auto">
-            <div className="max-h-[600px] overflow-y-auto scroll-smooth border border-border/50 rounded-lg bg-card/30 backdrop-blur-sm p-6 shadow-lg">
-              <div className="relative">
-                <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/60 to-primary/30"></div>
-
-                <div className="space-y-6">
-                  {experiences.map((exp, index) => (
-                    <div key={index} className="relative flex items-start">
-                      <div
-                        className={`absolute left-4 w-4 h-4 ${exp.color} rounded-full border-4 border-background z-10 shadow-lg`}
-                      ></div>
-
-                      <div className="ml-12 flex-1">
-                        <div className="bg-card/80 backdrop-blur-sm border border-border/50 rounded-lg p-4 hover:shadow-lg transition-all duration-300 hover:scale-[1.02] hover:border-primary/30">
-                          <div className="flex items-start justify-between mb-2">
-                            <div className="flex-1">
-                              <h3 className="font-bold text-foreground text-lg leading-tight tracking-tight">
-                                {exp.title}
-                              </h3>
-                              <div className="flex items-center gap-2 mt-1">
-                                <BuildingIcon className="h-4 w-4 text-muted-foreground" />
-                                <span className="text-muted-foreground font-semibold text-sm">
-                                  {exp.company}
-                                </span>
-                              </div>
-                            </div>
-                            <div className="flex items-center gap-1 text-primary text-sm font-semibold ml-4">
-                              <Calendar className="h-4 w-4" />
-                              <span>{exp.period}</span>
-                            </div>
-                          </div>
-                          <p className="text-muted-foreground text-sm leading-relaxed font-medium">
-                            {exp.description}
-                          </p>
-                        </div>
+          <p className="text-center text-muted-foreground mb-12 text-sm">
+            Core competencies built across 12 years of enterprise QA
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {competencies.map((competency) => {
+              const IconComponent = competency.icon;
+              return (
+                <Card
+                  key={competency.title}
+                  className="h-full hover:shadow-xl hover:border-primary/50 transition-all duration-300 bg-card/80 backdrop-blur-sm border-border/50 group hover:scale-105"
+                >
+                  <CardContent className="p-6">
+                    <div className="flex items-start gap-4">
+                      <div className="w-10 h-10 flex-shrink-0 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-200">
+                        <IconComponent className="h-5 w-5 text-primary" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="font-bold text-base mb-2 text-foreground group-hover:text-primary transition-colors duration-200 tracking-tight">
+                          {competency.title}
+                        </h3>
+                        <p className="text-muted-foreground text-sm leading-relaxed">
+                          {competency.description}
+                        </p>
                       </div>
                     </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-            <p className="text-center text-muted-foreground text-sm mt-4 font-medium">
-              Scroll to explore {experiences.length} years of professional
-              experience
-            </p>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>

@@ -17,41 +17,17 @@ export function AboutSection() {
         </h2>
 
         <Card className="p-8 mb-8 shadow-lg border-border/50 bg-card/80 backdrop-blur-sm">
-          <div className="space-y-6">
-            <p className="text-lg text-muted-foreground leading-relaxed text-pretty mb-8 font-medium text-justify">
-              I help organisations deliver reliable software faster — with fewer
-              defects and greater confidence. With <strong>12+ years</strong> in
-              QA leadership, I specialise in <strong>Salesforce</strong> and
-              <strong> Oracle Cloud ERP</strong> testing,{" "}
-              <strong>risk-based strategies</strong>, and automation.
+          <div className="space-y-5 mb-8">
+            <p className="text-lg text-muted-foreground leading-relaxed text-pretty font-medium text-justify">
+              With <strong>12+ years in QA leadership</strong>, I help organisations ship faster and with greater confidence.
+              I specialise in <strong>Salesforce</strong> and <strong>Oracle Cloud ERP</strong> testing, bringing
+              risk-based strategies and technical depth to complex transformations across banking, government,
+              aviation, and logistics.
             </p>
-
-            <p className="text-lg text-muted-foreground leading-relaxed text-pretty mb-8 text-justify">
-              My approach blends technical depth with business focus, ensuring
-              testing adds measurable value — from preventing costly defects in
-              production to accelerating release cycles. I’ve worked across
-              banking, government, aviation, and logistics, helping teams
-              de-risk complex transformations and deliver seamless customer
-              experiences.
-            </p>
-
-            <p className="text-lg text-muted-foreground leading-relaxed text-pretty mb-8 text-justify">
-              I’m known for bringing clarity to chaos: translating business
-              requirements into test strategies, coaching teams on quality-first
-              practices, and ensuring every release builds stakeholder trust.
-            </p>
-
-            <p className="text-lg text-muted-foreground leading-relaxed text-pretty mb-8 text-justify">
-              Currently, I’m exploring how <strong>AI</strong> can transform
-              quality engineering — from automated test generation to predictive
-              defect analysis — so I can bring smarter, future-ready solutions
-              to my clients.
-            </p>
-
             <p className="text-lg text-muted-foreground leading-relaxed text-pretty text-justify">
-              If you’re scaling Salesforce, modernising ERP, or driving digital
-              transformation, let’s connect — I’d love to show how quality can
-              become your competitive advantage.
+              I translate business requirements into clear test strategies, lead UAT with stakeholders, and ensure
+              every release builds trust. Currently, I’m exploring how <strong>AI</strong> can augment quality
+              engineering — from automated test generation to predictive defect analysis.
             </p>
           </div>
           <div className="flex flex-wrap gap-3 justify-center">

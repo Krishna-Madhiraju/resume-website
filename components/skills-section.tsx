@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { TestTube, Zap, Settings, Wrench } from "lucide-react";
+import { TestTube, Cloud, Kanban, Award, RefreshCw } from "lucide-react";
 
 const skillCategories = [
   {
@@ -10,17 +10,17 @@ const skillCategories = [
   },
   {
     title: "CRM & ERP Platforms",
-    icon: Zap,
+    icon: Cloud,
     skills: ["Salesforce", "Service Cloud", "Omni Studio", "Oracle Cloud ERP"],
   },
   {
     title: "Test Management & Collaboration",
-    icon: Settings,
+    icon: Kanban,
     skills: ["JIRA", "Zephyr", "Azure DevOps", "Confluence"],
   },
   {
     title: "Certifications",
-    icon: Wrench,
+    icon: Award,
     skills: [
       "Salesforce Certified AI Associate",
       "Professional Scrum Master I (PSM I)",
@@ -29,7 +29,7 @@ const skillCategories = [
   },
   {
     title: "Agile & QA Practices",
-    icon: Wrench,
+    icon: RefreshCw,
     skills: [
       "Agile Testing",
       "Risk-based QA",
@@ -50,7 +50,7 @@ export function SkillsSection() {
           Skills & Expertise
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category) => {
             const IconComponent = category.icon;
             return (

@@ -29,15 +29,23 @@ export function HeroSection() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-4 text-balance tracking-tight">
             Krishna Madhiraju
           </h1>
-          <h2 className="text-xl sm:text-2xl lg:text-3xl text-primary font-semibold mb-6 tracking-wide">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl text-primary font-semibold mb-3 tracking-wide">
             Senior Quality Consultant
           </h2>
+          <p className="text-sm text-muted-foreground mb-5 tracking-wide">
+            Wellington, New Zealand &nbsp;·&nbsp; Available for new engagements
+          </p>
+          <div className="flex flex-wrap gap-2 justify-center mb-7">
+            <span className="px-3 py-1 text-xs font-semibold bg-primary/10 text-primary border border-primary/20 rounded-full">Salesforce &amp; Oracle ERP</span>
+            <span className="px-3 py-1 text-xs font-semibold bg-primary/10 text-primary border border-primary/20 rounded-full">API &amp; Integration Testing</span>
+            <span className="px-3 py-1 text-xs font-semibold bg-primary/10 text-primary border border-primary/20 rounded-full">AI-Augmented Testing</span>
+            <span className="px-3 py-1 text-xs font-semibold bg-primary/10 text-primary border border-primary/20 rounded-full">Testing AI Systems &amp; Agents</span>
+          </div>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed font-medium text-justify">
-            Delivering robust software solutions at speed, I enable
-            organizations to accelerate releases, minimize defects, and achieve
-            quality outcomes with confidence through strategic test leadership,
-            risk-based QA, and seamless collaboration between technical and
-            business teams. defects and greater confidence.
+            QA Consultant with 12+ years helping organisations accelerate releases,
+            reduce defects, and build confidence in their software — through
+            strategic test leadership, risk-based QA, and specialist Salesforce
+            and Oracle ERP testing.
           </p>
         </div>
 
