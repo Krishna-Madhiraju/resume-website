@@ -2,7 +2,7 @@ export function AboutSection() {
   const differentiators = [
     {
       label: "Execution-First Mindset",
-      body: "I am a practitioner, not a spectator. Whether it's writing Playwright scripts, querying complex SQL databases, or validating REST APIs, I am embedded in the sprint to find defects before they reach your customers.",
+      body: "I am a practitioner, not a spectator. Whether it's writing Playwright scripts, querying complex SQL databases, or validating REST APIs, I'm embedded in the sprint to find defects before they reach your customers.",
     },
     {
       label: "Deep Platform Expertise",
@@ -10,11 +10,11 @@ export function AboutSection() {
     },
     {
       label: "AI-Native Quality",
-      body: "Actively testing Salesforce Agentforce and AI agent workflows — reasoning-reliability, safety guardrails, and prompt validation to ensure AI remains an asset, not a risk. Certified Salesforce AI Associate.",
+      body: "Ensuring AI remains an asset, not a risk. I validate Agentforce and AI agent workflows for reasoning accuracy, safety guardrails, and prompt reliability — so autonomous features ship with confidence. Certified Salesforce AI Associate.",
     },
     {
       label: "Tech-Agnostic Adaptability",
-      body: "While I have deep domain depth, my core strength is navigating any complex system. I bring a disciplined, risk-based approach to every project, ensuring predictable and reliable releases regardless of the stack.",
+      body: "While I have deep domain expertise, my core strength is navigating any complex system. I bring a disciplined, risk-based approach to every project, ensuring predictable and reliable releases regardless of the stack.",
     },
   ];
 
@@ -30,9 +30,10 @@ export function AboutSection() {
         </div>
 
         {/* Opening statement */}
+        <p className="font-mono text-xs text-primary tracking-[0.25em] uppercase mb-4">The Quality Guardian</p>
         <h2 className="font-display font-bold text-[clamp(32px,5vw,56px)] text-foreground leading-[1.1] mb-12 max-w-3xl">
-          I bridge the gap between complex strategy and{" "}
-          <span className="text-primary italic">high-velocity delivery.</span>
+          I provide the technical certainty required to{" "}
+          <span className="text-primary italic">ship complex systems.</span>
         </h2>
 
         {/* Bio + differentiators */}
@@ -40,14 +41,16 @@ export function AboutSection() {
 
           <div className="space-y-5">
             <p className="text-foreground text-base leading-relaxed">
-              My background spans New Zealand and Australia's most regulated sectors —
-              Government, Banking, Aviation, and Logistics — identifying critical failure
-              points in high-stakes Salesforce, Oracle ERP, and ServiceNow environments.
+              In enterprise delivery, quality is often the bottleneck; I transform it
+              into a competitive advantage. By embedding directly within the sprint, I
+              identify critical failure points across high-stakes, regulated
+              organisations before they ever reach a user.
             </p>
             <p className="text-muted-foreground text-base leading-relaxed">
-              I don't just "manage" quality; I execute it. An embedded practitioner
-              who works directly with developers and stakeholders to ensure systems are
-              production-ready from day one.
+              I don't just "check" software — I break it, fix it, and harden it.
+              Whether it's architecting a risk-based test strategy for a massive cloud
+              migration or validating complex cross-system data flows, I own the quality
+              outcome from discovery to release.
             </p>
           </div>
 

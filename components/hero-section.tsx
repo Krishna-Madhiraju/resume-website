@@ -81,17 +81,6 @@ export function HeroSection() {
               ))}
             </div>
 
-            {/* Current role */}
-            <div className="bg-primary/8 border border-primary/20 rounded-sm p-4 flex items-center justify-between">
-              <div>
-                <p className="font-mono text-[10px] text-primary tracking-widest uppercase">Currently at</p>
-                <p className="font-mono text-[12px] text-foreground mt-0.5">Ministry of Education</p>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-                <span className="font-mono text-[10px] text-primary tracking-widest uppercase">Available</span>
-              </div>
-            </div>
 
           </div>
         </div>

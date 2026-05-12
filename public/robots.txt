@@ -23,4 +23,4 @@ Allow: /
 User-agent: Googlebot
 Allow: /
 
-Sitemap: https://penchala3589.github.io/resume-website/sitemap.xml
+Sitemap: https://Krishna-Madhiraju.github.io/resume-website/sitemap.xml

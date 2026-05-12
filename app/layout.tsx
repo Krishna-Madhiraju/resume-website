@@ -25,7 +25,7 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const siteUrl = "https://penchala3589.github.io/resume-website";
+const siteUrl = "https://Krishna-Madhiraju.github.io/resume-website";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

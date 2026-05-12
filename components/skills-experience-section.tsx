@@ -20,13 +20,13 @@ const specializations = [
   {
     title: "Oracle Cloud ERP",
     description:
-      "Validating Procure-to-Pay, Contracts, and complex ERP integrations. Ensuring stable financial and operational workflows with zero-downtime deployments.",
+      "Validating Procure-to-Pay, Contracts, and complex ERP integrations — ensuring stable financial and operational workflows with zero-downtime deployments.",
     icon: Building2,
   },
   {
     title: "AI-Native Quality",
     description:
-      "Testing Salesforce Agentforce and AI agent workflows — reasoning-reliability, safety guardrails, and prompt validation. Certified Salesforce AI Associate.",
+      "Hands-on testing of Agentforce and AI agent workflows — validating reasoning accuracy, enforcing safety guardrails, and stress-testing prompt behaviour across edge cases. Certified Salesforce AI Associate.",
     icon: Sparkles,
   },
 ];
@@ -92,17 +92,6 @@ const toolCategories = [
 const experiences = [
   {
     title: "Senior Consultant",
-    company: "Ministry of Education",
-    period: "March 2026 – Present",
-    description: [
-      "E2E testing for a national student assessment platform — workflows, data warehouse integrations, and batch file transfers",
-      "SQL reconciliation of frontend data against backend records for reporting accuracy",
-      "UAT delivery with education sector stakeholders for compliance and reporting sign-off",
-    ],
-    isCurrent: true,
-  },
-  {
-    title: "Senior Consultant",
     company: "TTC NZ — Kāinga Ora",
     period: "Jan 2026 – March 2026",
     description: [
@@ -128,9 +117,9 @@ const experiences = [
     company: "Sentify — NZ Post",
     period: "May 2023 – July 2025",
     description: [
-      "QA across Salesforce Service Cloud and OmniStudio — Email-to-Case, Omni-Channel, and OmniStudio workflows",
-      "Contributed to Playwright test automation — supporting reduced execution time and improved sprint-level coverage",
-      "API and regression testing via Postman, with exposure to Rest Assured for integration validation",
+      "QA across Salesforce Service Cloud — Email-to-Case, Omni-Channel, and OmniStudio workflows",
+      "Built Playwright test automation, reducing execution time and improving sprint-level coverage",
+      "API and regression testing via Postman and Rest Assured for integration validation",
     ],
     isCurrent: false,
   },
