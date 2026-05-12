@@ -1,49 +1,71 @@
 export function AboutSection() {
-  const qualities = [
-    "Detail-Oriented",
-    "Risk-Based Thinker",
-    "Quality Advocate",
-    "Problem Solver",
+  const differentiators = [
+    {
+      label: "Execution-First Mindset",
+      body: "I am a practitioner, not a spectator. Whether it's writing Playwright scripts, querying complex SQL databases, or validating REST APIs, I am embedded in the sprint to find defects before they reach your customers.",
+    },
+    {
+      label: "Deep Platform Expertise",
+      body: "A specialist in Salesforce Service Cloud and Oracle Cloud ERP. I understand how these platforms break at the integration layer and how to secure them through rigorous E2E and data-integrity testing.",
+    },
+    {
+      label: "AI-Native Quality",
+      body: "Actively testing Salesforce Agentforce and AI agent workflows — reasoning-reliability, safety guardrails, and prompt validation to ensure AI remains an asset, not a risk. Certified Salesforce AI Associate.",
+    },
+    {
+      label: "Tech-Agnostic Adaptability",
+      body: "While I have deep domain depth, my core strength is navigating any complex system. I bring a disciplined, risk-based approach to every project, ensuring predictable and reliable releases regardless of the stack.",
+    },
   ];
 
   return (
-    <section id="about" className="py-24 px-4 sm:px-6 lg:px-8 bg-secondary/30">
+    <section id="about" className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary/20">
       <div className="max-w-5xl mx-auto">
+
         <div className="flex items-center gap-4 mb-14">
-          <span className="font-mono text-xs text-primary tracking-[0.25em] uppercase shrink-0">
+          <span className="font-mono text-sm font-semibold text-primary tracking-[0.2em] uppercase shrink-0">
             About
           </span>
           <div className="flex-1 h-px bg-border" />
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_200px] gap-12 items-start">
+        {/* Opening statement */}
+        <h2 className="font-display font-bold text-[clamp(32px,5vw,56px)] text-foreground leading-[1.1] mb-12 max-w-3xl">
+          I bridge the gap between complex strategy and{" "}
+          <span className="text-primary italic">high-velocity delivery.</span>
+        </h2>
+
+        {/* Bio + differentiators */}
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-12 items-start">
+
           <div className="space-y-5">
-            <p className="text-foreground text-lg leading-relaxed">
-              With <span className="text-primary font-semibold">12+ years in QA leadership</span>, I help organisations ship
-              faster and with greater confidence. I specialise in{" "}
-              <span className="text-primary font-semibold">Salesforce</span> and{" "}
-              <span className="text-primary font-semibold">Oracle Cloud ERP</span> testing, bringing
-              risk-based strategies and technical depth to complex transformations across banking,
-              government, aviation, and logistics.
+            <p className="text-foreground text-base leading-relaxed">
+              My background spans New Zealand and Australia's most regulated sectors —
+              Government, Banking, Aviation, and Logistics — identifying critical failure
+              points in high-stakes Salesforce, Oracle ERP, and ServiceNow environments.
             </p>
             <p className="text-muted-foreground text-base leading-relaxed">
-              I translate business requirements into clear test strategies, lead UAT with stakeholders,
-              and ensure every release builds trust. Currently exploring how{" "}
-              <span className="text-foreground font-medium">AI</span> can augment quality engineering —
-              from automated test generation to predictive defect analysis.
+              I don't just "manage" quality; I execute it. An embedded practitioner
+              who works directly with developers and stakeholders to ensure systems are
+              production-ready from day one.
             </p>
           </div>
 
-          <div className="flex flex-col gap-2">
-            {qualities.map((quality) => (
-              <div
-                key={quality}
-                className="font-mono text-[11px] tracking-wide text-muted-foreground border border-border/50 px-3 py-2 rounded-sm hover:border-primary/30 hover:text-primary transition-colors duration-200"
-              >
-                {quality}
-              </div>
-            ))}
+          <div className="space-y-1">
+            <p className="font-mono text-[10px] text-muted-foreground tracking-[0.2em] uppercase mb-5">The "Doer" Advantage</p>
+            <div className="space-y-4">
+              {differentiators.map((item) => (
+                <div
+                  key={item.label}
+                  className="border-l-2 border-primary/30 pl-5 hover:border-primary transition-colors duration-300"
+                >
+                  <p className="font-mono text-xs text-primary tracking-widest uppercase mb-1.5">{item.label}</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.body}</p>
+                </div>
+              ))}
+            </div>
           </div>
+
         </div>
       </div>
     </section>

@@ -4,17 +4,17 @@ const skillCategories = [
   {
     title: "Test Automation",
     icon: TestTube,
-    skills: ["Playwright", "Postman", "Rest Assured"],
+    skills: ["Playwright", "Selenium", "Postman", "Rest Assured", "SQL", "Axway"],
   },
   {
     title: "CRM & ERP Platforms",
     icon: Cloud,
-    skills: ["Salesforce", "Service Cloud", "Omni Studio", "Oracle Cloud ERP"],
+    skills: ["Salesforce", "Service Cloud", "Agentforce", "OmniStudio", "Oracle Cloud ERP", "Oracle EBS", "ServiceNow", "Genesys"],
   },
   {
     title: "Test Management & Collaboration",
     icon: Kanban,
-    skills: ["JIRA", "Zephyr", "Azure DevOps", "Confluence"],
+    skills: ["JIRA", "XRAY", "Zephyr", "Azure DevOps", "Azure Test Plans", "Confluence"],
   },
   {
     title: "Certifications",
@@ -42,10 +42,10 @@ const skillCategories = [
 
 export function SkillsSection() {
   return (
-    <section id="skills" className="py-24 px-4 sm:px-6 lg:px-8">
+    <section id="skills" className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center gap-4 mb-14">
-          <span className="font-mono text-xs text-primary tracking-[0.25em] uppercase shrink-0">
+          <span className="font-mono text-sm font-semibold text-primary tracking-[0.2em] uppercase shrink-0">
             Skills & Expertise
           </span>
           <div className="flex-1 h-px bg-border" />
@@ -71,7 +71,7 @@ export function SkillsSection() {
                   {category.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="font-mono text-[10px] tracking-wide px-2 py-1 rounded-sm border border-border/60 text-muted-foreground bg-secondary/50 hover:border-primary/30 hover:text-primary transition-colors duration-150"
+                      className="skill-tag font-mono text-[10px] tracking-wide px-2 py-1 rounded-sm border border-border/60 text-muted-foreground bg-secondary/50"
                     >
                       {skill}
                     </span>

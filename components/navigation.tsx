@@ -1,27 +1,33 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
-const navItems = [
+const sectionItems = [
   { name: "About", href: "#about" },
-  { name: "Experience", href: "#experiencetimeline" },
+  { name: "Career", href: "#experiencetimeline" },
   { name: "What I Bring", href: "#whatibring" },
-  { name: "Skills", href: "#skills" },
   { name: "Contact", href: "#contact" },
 ];
 
-export function Navigation() {
+export function Navigation({ hasBlog = false }: { hasBlog?: boolean }) {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+  const isBlogActive = pathname.startsWith("/blog");
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 40);
 
-      const sections = navItems.map((item) => item.href.substring(1));
+      if (!isHome) return;
+
+      const sections = sectionItems.map((item) => item.href.substring(1));
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -38,11 +44,19 @@ export function Navigation() {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isHome]);
 
-  const scrollToSection = (href: string) => {
-    document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+  const handleSectionClick = (href: string) => {
+    if (isHome) {
+      document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+    }
     setIsOpen(false);
+  };
+
+  const handleLogoClick = () => {
+    if (isHome) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   };
 
   return (
@@ -55,25 +69,61 @@ export function Navigation() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <span className="font-display text-lg text-foreground">
-            KM
-          </span>
+          {isHome ? (
+            <button
+              onClick={handleLogoClick}
+              aria-label="Back to top"
+              className="font-display font-bold text-sm text-foreground border border-foreground/20 px-2.5 py-1 rounded-sm tracking-[0.1em] hover:border-primary/50 hover:text-primary transition-colors duration-200"
+            >
+              KM
+            </button>
+          ) : (
+            <Link
+              href="/"
+              aria-label="Back to home"
+              className="font-display font-bold text-sm text-foreground border border-foreground/20 px-2.5 py-1 rounded-sm tracking-[0.1em] hover:border-primary/50 hover:text-primary transition-colors duration-200"
+            >
+              KM
+            </Link>
+          )}
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-1">
-            {navItems.map((item) => (
-              <button
-                key={item.name}
-                onClick={() => scrollToSection(item.href)}
+            {sectionItems.map((item) =>
+              isHome ? (
+                <button
+                  key={item.name}
+                  onClick={() => handleSectionClick(item.href)}
+                  className={`font-mono text-xs tracking-wider px-4 py-2 transition-colors uppercase ${
+                    activeSection === item.href.substring(1)
+                      ? "text-primary"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  {item.name}
+                </button>
+              ) : (
+                <Link
+                  key={item.name}
+                  href={`/${item.href}`}
+                  className="font-mono text-xs tracking-wider px-4 py-2 transition-colors uppercase text-muted-foreground hover:text-foreground"
+                >
+                  {item.name}
+                </Link>
+              )
+            )}
+            {hasBlog && (
+              <Link
+                href="/blog"
                 className={`font-mono text-xs tracking-wider px-4 py-2 transition-colors uppercase ${
-                  activeSection === item.href.substring(1)
+                  isBlogActive
                     ? "text-primary"
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >
-                {item.name}
-              </button>
-            ))}
+                Blog
+              </Link>
+            )}
           </div>
 
           {/* Mobile menu button */}
@@ -94,19 +144,43 @@ export function Navigation() {
         {isOpen && (
           <div className="md:hidden border-t border-border/30 bg-background/95 backdrop-blur-md">
             <div className="px-2 py-3 space-y-1">
-              {navItems.map((item) => (
-                <button
-                  key={item.name}
-                  onClick={() => scrollToSection(item.href)}
+              {sectionItems.map((item) =>
+                isHome ? (
+                  <button
+                    key={item.name}
+                    onClick={() => handleSectionClick(item.href)}
+                    className={`block font-mono text-xs tracking-widest uppercase px-4 py-3 w-full text-left transition-colors ${
+                      activeSection === item.href.substring(1)
+                        ? "text-primary"
+                        : "text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    {item.name}
+                  </button>
+                ) : (
+                  <Link
+                    key={item.name}
+                    href={`/${item.href}`}
+                    className="block font-mono text-xs tracking-widest uppercase px-4 py-3 w-full text-left transition-colors text-muted-foreground hover:text-foreground"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                )
+              )}
+              {hasBlog && (
+                <Link
+                  href="/blog"
                   className={`block font-mono text-xs tracking-widest uppercase px-4 py-3 w-full text-left transition-colors ${
-                    activeSection === item.href.substring(1)
+                    isBlogActive
                       ? "text-primary"
                       : "text-muted-foreground hover:text-foreground"
                   }`}
+                  onClick={() => setIsOpen(false)}
                 >
-                  {item.name}
-                </button>
-              ))}
+                  Blog
+                </Link>
+              )}
             </div>
           </div>
         )}
