@@ -32,5 +32,6 @@ dist/
 # Playwright MCP temp files
 .playwright-mcp/
 
-# Review screenshots
-review-*.png
+# Screenshots dump folder
+/screenshots/*
+!/screenshots/.gitkeep
