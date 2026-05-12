@@ -1,0 +1,69 @@
+# Krishna Madhiraju
+
+> Senior Quality Consultant | Wellington, New Zealand | Available for new engagements
+
+Krishna Madhiraju is a Senior QA Consultant with 12+ years of experience helping enterprise organisations accelerate software releases, reduce defects, and build confidence in their systems. He specialises in Salesforce testing, Oracle Cloud ERP testing, API and integration testing, and is actively exploring AI-augmented quality engineering.
+
+## Contact
+
+- Email: krishna3589@gmail.com
+- Phone: +64 212 9999 30
+- Location: Wellington, New Zealand
+- LinkedIn: https://linkedin.com/in/krishna-madhiraju
+- Resume: https://penchala3589.github.io/resume-website/Krishna_Madhiraju_Resume.pdf
+
+## Core Expertise
+
+- Salesforce Testing (Service Cloud, Omni-Channel, Email-to-Case, Web-to-Case, workflows, dashboards)
+- Oracle Cloud ERP Testing (Procure-to-Pay, Contracts, financial and operational integrations)
+- API & Integration Testing (Postman, Rest Assured)
+- Test Strategy & Execution (functional, regression, system, performance, UAT)
+- Test Automation (Playwright)
+- Agile QA Leadership (JIRA, XRAY, Azure DevOps, Zephyr, Confluence)
+- Backend & Data Validation (SQL)
+- Defect Management & Risk-Based QA
+- AI-Augmented Testing
+
+## Certifications
+
+- Salesforce Certified AI Associate
+- Professional Scrum Master I (PSM I)
+- ISTQB Foundation Level
+
+## Career History
+
+**Senior Consultant — TTC Australia** (July 2025 – Present)
+Leading enterprise QA consulting for digital transformation programmes, shaping test strategy and governance for large-scale implementations.
+
+**Quality Engineer (Salesforce) — NZ Post** (May 2023 – July 2025)
+Owned Salesforce Service Cloud testing end-to-end — from test strategy through Playwright automation and Postman API validation — for mission-critical postal operations.
+
+**Senior Test Analyst — Accident Compensation Corporation (ACC)** (April 2021 – May 2023)
+QA lead for Oracle Cloud ERP integration programmes. Shaped risk-based test strategies and managed end-to-end defect lifecycle for complex government insurance systems.
+
+**Senior Test Analyst — Jarden** (Feb 2021 – April 2021)
+Delivered testing across financial services applications with a focus on regulatory compliance and data integrity.
+
+**Senior Test Analyst — Waka Kotahi (NZTA)** (July 2020 – Jan 2021)
+Led testing for national transport infrastructure systems, ensuring reliability and performance of citizen-facing services.
+
+**Senior Test Analyst — Auckland Airport** (Aug 2019 – March 2020)
+Validated airport operations systems supporting passenger experience and airside/landside operational workflows.
+
+**Senior Test Analyst — Ministry for Primary Industries (MPI)** (April 2019 – July 2019)
+Delivered testing for government regulatory and biosecurity systems, ensuring compliance and data integrity.
+
+**Test Analyst — Accident Compensation Corporation (ACC)** (March 2018 – April 2019)
+Executed systematic testing for healthcare and compensation management systems within ACC's enterprise portfolio.
+
+**Configuration Analyst — Vodafone New Zealand** (Sep 2017 – Dec 2017)
+Managed system configuration and testing across telco infrastructure and customer service platforms.
+
+**Senior Test Analyst (Salesforce) — Prolific Corporation Ltd** (May 2014 – June 2016)
+Built test frameworks and delivered high-quality Salesforce platform testing for enterprise CRM implementations.
+
+**Application Developer (Salesforce) — IBM India** (Aug 2013 – May 2014)
+Developed and tested Salesforce applications for enterprise clients, focusing on custom development and system integration.
+
+**Senior Systems Engineer — Infosys** (Dec 2010 – Aug 2013)
+Engineered and maintained enterprise systems across multiple client accounts, providing QA and technical solutions at scale.
